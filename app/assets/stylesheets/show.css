@@ -1,0 +1,102 @@
+.show-header {
+  height: 130px;
+  border: solid 5px black;     /* 枠線指定 */
+  border-radius: 40px;
+  width: 800px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.show-header h1 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 130px;
+  color: yellow;
+}
+
+.show-wrapper {
+  opacity: 0;
+}
+
+.show-content {
+  display: flex;
+}
+
+.show-content img {
+  height: 600px;
+  margin: 50px 0 0 50px;
+  border-radius: 10px;
+}
+
+.show-show {
+  
+}
+
+.show-show h1 {
+  font-size: 40px;
+  margin: 50px 0 0 300px;
+}
+
+.show-show p {
+  margin-left: 150px;
+}
+
+.rank-header {
+  width: 800px;
+  border-bottom: 3px solid black;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.rank-header-sub {
+  width: 800px;
+  border-bottom: 3px solid black;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.rank-header h1 {
+  display: inline;
+  cursor :pointer;
+}
+.rank-header h1:hover {
+  background-color: aquamarine;
+}
+
+.close-btn {
+  float: right;
+  margin-top: 30px;
+}
+
+.close-btn-sub {
+  float: right;
+  margin-top: 30px;
+}
+
+.yutube-video-comment {
+  display: flex;
+  opacity: 0;
+}
+
+.yutube-video-comment2 {
+  display: flex;
+}
+
+#yutube-video-comment-sub {
+  display: none;
+}
+
+.video-comment-run {
+  width: 500px;
+  margin-left: 100px;
+}
+
+.video-comment-run h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.video-comment-run p {
+  margin-top: 20px;
+  font-size: 20px;
+}
