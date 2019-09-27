@@ -1,8 +1,11 @@
 class CreatePosts < ActiveRecord::Migration[5.2]
   def change
     create_table :posts do |t|
-      
-      t.timestamps
+      t.string :name
+      t.string :image
+      t.string :symmetry
+      t.string :genre
+      t.timestamps null: true
     end
   end
 end
