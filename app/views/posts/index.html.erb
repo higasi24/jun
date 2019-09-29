@@ -20,9 +20,9 @@
   </div>
   <div class="d">
     <div class="chara-icon">
-      <img src="https://sarukun-blog.com/wp-content/uploads/2019/08/IMG_8267.png" alt="サル君" href="posts/show">
+      <img class="left-chara" src="http://yukawanet.com/wp-content/uploads/2018/08/unchi_character.png" alt="うんこ君" href="posts/show">
     </div>
-    <div class="chara-icon-name">サル君</div>
+    <div class="chara-icon-name-left">うんこ君</div>
     <div class="chara-balloon">
       <div class="chara-balloon-content">
         こんにちは
@@ -33,65 +33,45 @@
 <div class="e">
   <div class="main-post-header">
     <h1>作品</h1>
+      <span class="show-table">
+        [<a>show</a>]</span>
+    <ul class="show-hide">
+    <% @posts.each_with_index do |post, index| %>
+      <li>
+        <a href="#i-<%= index %>"><%= post %></a>
+      </li>
+    <% end %>
+    </ul>
   </div>
-  <div class="main-post-yutuber-run">
-    <div class="main-post-yutuber">
-      <h3>加藤純一</h3>
-      <div class="main-post-yutuber-image">
-         <%= link_to image_tag('https://game.watch.impress.co.jp/img/gmw/docs/1193/420/001_l.jpg', { :border => '0', :alt => '加藤純一'}), posts_path(@post) %>
-      </div>
-      <div class="main-post-yutuber-style">
-        <h5>カテゴリ</h5>
-        <p>ゲーム#雑談</p>
-      </div>
+  <h2 id="ranking-name">
+    <span id="i-0">オススメTOP5</span>
+  </h2>
+  <%= render partial: "yutuber" %>
+  <h2 id="ranking-name" class="name-sub">
+    <span id="i-1">人気男性ユーチューバーTOP5</span>
+  </h2>
+  <%= render partial: "yutuber2" %>
+  <h2 id="ranking-name" class="name-sub">
+    <span id="i-2">人気女性ユーチューバーTOP5</span>
+  </h2>
+  <%= render partial: "yutuber3" %>
+</div>
+<div class="f">
+  <div class="post-new">
+    <div class="post">
+      <h1>最近の投稿</h1>
     </div>
-    <div class="main-post-yutuber">
-      <h3>ゆゆうた</h3>
-      <div class="main-post-yutuber-image">
-        <img src="https://yt3.ggpht.com/a/AGF-l7-gG8cb0NXNhMcP4iVINu4c8oDq2r1uUYCzjw=s900-c-k-c0xffffffff-no-rj-mo" width="256.88">
-      </div>
-      <div class="main-post-yutuber-style">
-        <h5>カテゴリ</h5>
-        <p>音楽#雑談</p>
-      </div>
-    </div>
-    <div class="main-post-yutuber">
-      <h3>堀江貴文</h3>
-      <div class="main-post-yutuber-image">
-        <img src="https://d2oe4hwshyef6j.cloudfront.net/production/uploads/image/series_thumbnail/image/111473/d6a5801dfc90dc680a077411d55693ddeea85ba7" width="256.88">
-      </div>
-      <div class="main-post-yutuber-style">
-        <h5>カテゴリ</h5>
-        <p>ビジネス#雑談</p>
-      </div>
-    </div>
-    <div class="main-post-yutuber">
-      <h3>マコなり社長</h3>
-      <div class="main-post-yutuber-image">
-        <img src="https://tech-camp.in/note/wp-content/uploads/2019/08/mako-square.png" width="256.88">
-      </div>
-      <div class="main-post-yutuber-style">
-        <h5>カテゴリ</h5>
-        <p>ビジネス</p>
-      </div>
-    </div>
-    <div class="main-post-yutuber">
-      <h3>外人のジョン</h3>
-      <div class="main-post-yutuber-image">
-        <img src="https://nancreator.com/wp-content/uploads/2017/07/2017y07m27d_131814317.jpg" width="256.88">
-      </div>
-      <div class="main-post-yutuber-style">
-        <h5>カテゴリ</h5>
-        <p>アニメ雑学#雑談</p>
-      </div>
-    </div>
+    <ul class="post-new-post">
+      <li>kokoko</li>
+    </ul>
   </div>
-  <div class="main-post">
-    <h3>タイトル</h3>
-    <a href="#"></a>
-    <div class="main-post-content">内容</div>
-    <div class="main-post-comment">コメント</div>
+  <div class="post-month">
+    <div class="post">
+      <h1>アーカイブ</h1>
+    </div>
+    <ul class="post-mouth-post">
+      <li>kokoko</li>
+    </ul>
   </div>
 </div>
-<div class="f"></div>
 <div class="g"></div>

@@ -1,0 +1,22 @@
+.f {
+}
+
+.post-new {
+  width: calc(86% / 2);
+  padding: 50px;
+  float: left;
+}
+
+.post {
+  font-size: 25px;
+  border-bottom: double black;
+}
+.post-new-post {
+  
+}
+
+.post-month {
+  display: inline-block;
+  padding: 50px;
+  width: calc(86% / 2);
+}
