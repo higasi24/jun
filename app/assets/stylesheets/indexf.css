@@ -1,0 +1,36 @@
+.f {
+  margin: 60px 10px;
+  height: 500px;
+}
+
+.post-new {
+  width: calc(85% / 2);
+  padding: 50px;
+  float: left;
+  border: solid;
+}
+
+.post {
+  font-size: 25px;
+  border-bottom: double black;
+}
+
+.post-new-post {
+  margin: 25px 15px;
+}
+
+.ppp {
+  border-bottom: 0.3px solid black;
+  margin: 30px 15px;
+}
+
+.post-month {
+  display: inline-block;
+  padding: 50px;
+  width: calc(85% / 2);
+  border: solid;
+}
+
+.post-mouth-post {
+  margin: 25px 15px;
+}

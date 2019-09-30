@@ -4,9 +4,33 @@ class PostsController < ApplicationController
     @posts = (post_ranking)
     @post1 = Post.find(1)
     @post2 = Post.find(2)
+    @contents = Post.all.order("id DESC")
   end
 
   def show
+    @post = Post.find(params[:id])
+    @contents = @post.devide_monthly
+  end
+
+  def create
+    Post.create(post_params)
+  end
+
+  def contents
+    @post = Post.find(params[:id])
+    @yyyymm = params[:yyyymm]
+    @contents = @post.contents.group_by {|content| content.created_at.strftime('%Y%m')[@yyyymm]}
+    @p = @contents.values
+    # @ww = post[0]
+    # .sort_by{|content| content[:created_at]}.reverse
+    # .group_by {|content| content.created_at.strftime('%Y%m')[@yyyymm]}
+    # .sort_by! {|content| content[:created_at]}}.reverse
+  end
+
+  private
+
+  def post_params
+    params.permit(:content, :name)
   end
 
   def post_ranking

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :posts do
   resources :users, only: [:index]
   end
+  get  '/posts/:id/contents/:yyyymm', to: 'posts#contents', as: :post_content
   resources :apps
 end

@@ -62,7 +62,9 @@
       <h1>最近の投稿</h1>
     </div>
     <ul class="post-new-post">
-      <li>kokoko</li>
+    <% @contents.each do |content| %>
+      <li class="ppp"><%= content.content %></li>
+    <% end %>
     </ul>
   </div>
   <div class="post-month">
@@ -70,7 +72,7 @@
       <h1>アーカイブ</h1>
     </div>
     <ul class="post-mouth-post">
-      <li>kokoko</li>
+      <li class="ppp"><%= link_to "fff", post_path(@post1), class: "bbb" %></li>
     </ul>
   </div>
 </div>
