@@ -72,7 +72,9 @@
       <h1>アーカイブ</h1>
     </div>
     <ul class="post-mouth-post">
-      <li class="ppp"><%= link_to "fff", post_path(@post1), class: "bbb" %></li>
+    <% @ppp.each do |yyyymm, count| %>
+      <li class="ppp"><%= link_to ymconv(yyyymm, count.to_s), post_content_path(@post1, yyyymm), class: "bbb" %></li>
+    <% end %>
     </ul>
   </div>
 </div>
