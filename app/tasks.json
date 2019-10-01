@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "/Users/higashikawachitsugu/kato/jun/app/views/apps/sample.wav",
+          "type": "shell",
+          "command": "explorer ${selectedText}",
+          "group": "none",
+          "presentation": {
+              "reveal": "never"
+          },
+          "problemMatcher": []
+      }
+  ]
+}

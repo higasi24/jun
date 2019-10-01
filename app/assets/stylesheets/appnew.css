@@ -27,10 +27,20 @@ header h1 {
   margin-left: 30px;
   margin-top: 40px;
   border-radius: 15px;
+  box-shadow: 1px 1px;
+  cursor: pointer;
+}
+.app-contents-sub:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  
 }
 .app-contents-sub p {
   text-align: center;
   line-height: 100px;
+  box-shadow: #333;
 }
 
 .app-contents-sub2 {
@@ -40,6 +50,15 @@ header h1 {
   margin-left: 57px;
   margin-top: 40px;
   border-radius: 15px;
+  box-shadow: 1px 1px;
+  cursor: pointer;
+}
+.app-contents-sub2:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  
 }
 .app-contents-sub2 p {
   text-align: center;
