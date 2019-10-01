@@ -5,8 +5,9 @@ body {
 
 .b-c-d {
   background-image: url(image/yutube.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 1000px;
 }
 
 .b {
@@ -87,7 +88,7 @@ body {
 }
 
 .e {
-  
+  margin: 180px 0;
 }
 
 .main-post-header {
