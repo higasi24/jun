@@ -1,0 +1,23 @@
+.app-show-wrapper {
+  background-image: url(http://websae.net/stop-smoking-app/darkness.jpg);
+  background-position: center top;
+  background-repeat: repeat;
+  padding: 50px 0 100px;
+}
+
+.app-show-contents {
+  background-image: url(http://websae.net/stop-smoking-app/iphone_bg.png);
+  width: 456px;
+  height: 856px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.f_app_20131103 {
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  width: 320px;
+  height: 568px;
+  border: none;
+}

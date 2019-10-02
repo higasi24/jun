@@ -10,7 +10,7 @@
 </nav>
 <div class="b-c-d">
   <div class="b">
-    <h1>ようこそ</h1>
+    <h1></h1>
   </div>
   <div class="c">
     <p class="title-comment">YouTube</p>
@@ -26,6 +26,22 @@
     <div class="chara-balloon">
       <div class="chara-balloon-content">
         こんにちは
+      </div>
+    </div>
+    <div class="slide-wrapper">
+      <div class="slide-contents">
+        <div class="show">
+          <img src="https://one-one-only.com/one/wp-content/uploads/2018/01/youtubers-1.jpg" width="920" height="405" alt="">
+        </div>
+        <div>
+          <img src="https://img.jisin.jp/uploads/2019/08/miyasako_hiroyuki1_1_line_tw.jpg" width="920" height="405" alt="">
+        </div>
+        <div>
+          <img src="https://tani-channel.com/wordpress/wp-content/uploads/2014/10/20141024-01.png" width="920" height="405" alt="">
+        </div>
+        <div>
+          <img src="https://www.tvguide.or.jp/wp-content/uploads/2019/08/specialinterview_20190818_02_01.jpg" width="920" height="405" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -72,8 +88,22 @@
       <h1>アーカイブ</h1>
     </div>
     <ul class="post-mouth-post">
-      <li class="ppp"><%= link_to "fff", post_path(@post1), class: "bbb" %></li>
+    <% @ppp.each do |yyyymm, count| %>
+      <li class="ppp"><%= link_to ymconv(yyyymm, count.to_s), post_content_path(@post1, yyyymm), class: "bbb" %></li>
+    <% end %>
     </ul>
   </div>
 </div>
-<div class="g"></div>
+<div class="g">
+  <div class="main-app-wrapper">
+    <div class="main-app-contents">
+      <h1>加藤純一ボイスアプリ</h1>
+      <a href="apps" target="_blank" rel="noopener noreferrer">
+        <img class="main-app-image" src="https://game.watch.impress.co.jp/img/gmw/list/1193/420/003.jpg" alt="禁煙は貯金だ" scale="0">
+      </a>
+    </div>
+  </div>
+</div>
+<footer>
+  
+</footer>

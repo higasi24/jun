@@ -1,12 +1,20 @@
 body {
   background-image: url(https://unkapp.com/images/bg_2.jpg);
   max-width: 100vw;
+  background-size: 140px 180px;
+  background-position: 50%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 
 .b-c-d {
-  background-image: url(image/yutube.png);
+  background-image: url(image/2.png);
+  box-shadow: 0 0 20px -5px rgba(0,0,0,.85);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 1000px;
+  /* background: #121d09 url(image/2.png) no-repeat; */
 }
 
 .b {
@@ -87,7 +95,7 @@ body {
 }
 
 .e {
-  
+  margin: 180px 0;
 }
 
 .main-post-header {

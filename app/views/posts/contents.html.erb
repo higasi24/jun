@@ -1,3 +1,12 @@
-<% @p.each do |p| %>
-  <h1><%= p.title %></h1>
-<% end %>
+<div class="month-wrapper">
+  <div class="month-header">
+    <div class="month-header-sub">
+      <span class="month-archive">― ARCHIVES ―</span>
+      <h1 class="month-month"><%= @yyyymm %></h1>
+      <% @p.each do |p| %>
+      <h1><%= p.title %></h1>
+      <% end %>
+    </div>
+  </div>
+  <div>
+</div>

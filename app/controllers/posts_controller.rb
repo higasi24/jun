@@ -5,11 +5,12 @@ class PostsController < ApplicationController
     @post1 = Post.find(1)
     @post2 = Post.find(2)
     @contents = Post.all.order("id DESC")
+    @ppp = @post1.devide_monthly
   end
 
   def show
-    @post = Post.find(params[:id])
-    @contents = @post.devide_monthly
+    # @post = Post.find(params[:id])
+    # @contents = @post.devide_monthly
   end
 
   def create
