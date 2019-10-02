@@ -28,7 +28,7 @@ $(document).on('turbolinks:load', function(){
                     <div class="app-contents-sss">
                       <div class="app-contents-sub">
                         <p id="play">韓国人</p>
-                        <audio id='sound' preload="auto" src="https://doc-08-04-docs.googleusercontent.com/docs/securesc/jnnmcgpnhovk2h5c1lbs1606b16v3q7l/lu7jmpm1pkslbkn85lgde2l599f7isc2/1569902400000/15778955479322778581/05483003997726360300/133iee8QnSQd5mf5yRL0Y3h0VQ5_hp2uO?e=download" type="audio/mp3"></audio>
+                        <audio id='sound' preload="auto" src="https://manual.haik-cms.jp/swfu/d/irishnokaze.mp3" type="audio/mp3"></audio>
                       </div>
                       <div class="app-contents-sub2">
                         <p>d</p>
@@ -51,7 +51,7 @@ $(document).on('turbolinks:load', function(){
                     <div class="app-contents-sss">
                       <div class="app-contents-sub">
                         <p id="play5">許されねぇぞ</p>
-                        <audio id='sound5' preload="auto" src="https://doc-14-04-docs.googleusercontent.com/docs/securesc/jnnmcgpnhovk2h5c1lbs1606b16v3q7l/5asbkdhn43jnifamdt3vh35d2943o9k7/1569902400000/15778955479322778581/05483003997726360300/138uKAXPCo2WNruXGVg14J16H5Tl4fPFb?e=download" type="audio/mp3"></audio>
+                        <audio id='sound5' preload="auto" src="https://webref.eomec.com/demo/html/audio-1.mp3" type="audio/mp3"></audio>
                       </div>
                       <div class="app-contents-sub2">
                         <p>d</p>

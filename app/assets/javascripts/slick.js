@@ -24,8 +24,9 @@
 //     fade: true,
 //   });
 // });
-$(function() {
-  $('.slide-contents').slick({
+$(document).on('turbolinks:load', function(){
+    $(function() {
+    $('.slide-contents').slick({
         infinite: true,
         dots:true,
         slidesToShow: 1,
@@ -38,8 +39,8 @@ $(function() {
                        centerMode: false,
              }
         }]
-   });
-});
+    });
+    });
 
 ;(function(factory) {
     'use strict';
@@ -3035,3 +3036,4 @@ $(function() {
     };
 
 }));
+});
