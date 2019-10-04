@@ -1,5 +1,45 @@
 $(document).on('turbolinks:load', function(){
   $(function(){
+
+    $(document).on("ajax:success", ".fav", function(e) {
+      console.log("Fff");
+      if ($('#' + e.detail[0]).hasClass('fa-heart')) {
+        $('#' + e.detail[0]).removeClass('fa-heart').addClass('fa-heart-o');
+      } else {
+    $('#' + e.detail[0]).removeClass('fa-heart-o').addClass('fa-heart');
+      }
+    });
+
+    $(document).on("click", ".a", function () {
+      console.log("hh");
+      setTimeout(function(){
+        $("#sound").get(0).play();
+      },1000);
+    });
+
+    $(".a").on("click", function(e){
+      $(".left-chara").show(12000, function(){
+        $(this).animate({'top':'200px','right':'680px','height':'100px'},4000, function(){
+          $(this).animate({zIndex:1},{
+            duration:1000,
+            step:function(now){
+              $(this).css({transform:'rotate(' + (now * 1080) + 'deg)'});
+            },
+            complete:function(){
+              $('.left-chara').css('zIndex', 0);
+            }
+          });
+        });
+      });
+    });
+
+    $(".a").on("click", function(e){
+      setTimeout(function() {
+        console.log("fg");
+        $('html, body').animate({ scrollTop: 720 }, 'slow');
+      }, 12000);
+    });
+
     setInterval(function(){
       var count = 0;
       count++;
@@ -42,6 +82,10 @@ $(document).on('turbolinks:load', function(){
           return false;
         });
       })
+    });
+
+    $(document).on("click", ".mmm", function () {
+      $('.cooo').show(2000);
     });
   });
 });

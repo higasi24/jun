@@ -1,4 +1,10 @@
 <nav class="a">
+  <audio id='sound' preload="auto" src="https://soundeffect-lab.info/sound/anime/mp3/school-chime1.mp3" type="audio/mp3"></audio>
+  <div class="sample-demo">
+    <p>【HTML5】要素の背景に動画を使う方法　その1</p>
+    <video muted src="http://vodkabears.github.io/vide/video/ocean.mp4" autoplay loop>
+    </video>
+  <!--sample-demo--></div>
   <div class="icon-group">
     <a class="icon" href="https://twitter.com/unkochan1234567">
       <img src="https://unkapp.com/images/twitter.png" alt="Twitter">
@@ -6,7 +12,9 @@
     <a class="icon" href="https://www.youtube.com/channel/UCx1nAvtVDIsaGmCMSe8ofsQ">
       <img src="https://unkapp.com/images/youtube.png">
     </a>
+    <h1>まだ未完成だよ!</h1>
   </div>
+  <%# <!--sample-demo--></div> %>
 </nav>
 <div class="b-c-d">
   <div class="b">
@@ -20,8 +28,13 @@
   </div>
   <div class="d">
     <div class="chara-icon">
-      <img class="left-chara" src="http://yukawanet.com/wp-content/uploads/2018/08/unchi_character.png" alt="うんこ君" href="posts/show">
+      <img class="left-chara" src="http://yukawanet.com/wp-content/uploads/2018/08/unchi_character.png">
     </div>
+    <img class="kkk" src="http://yukawanet.com/wp-content/uploads/2018/08/unchi_character.png"
+    data-500="transform:translateX(-800px);"
+    data-800="transform:translateX(-300px);"
+    >
+    <img class="chara-icon2" src="https://www.nhkmec.com/wpress/wp-content/uploads/031-01-01.jpg">
     <div class="chara-icon-name-left">うんこ君</div>
     <div class="chara-balloon">
       <div class="chara-balloon-content">
@@ -102,8 +115,21 @@
         <img class="main-app-image" src="https://game.watch.impress.co.jp/img/gmw/list/1193/420/003.jpg" alt="禁煙は貯金だ" scale="0">
       </a>
     </div>
+    <div class="main-app-contents">
+      <h1>加藤純一クイズアプリ</h1>
+      <a href="posts/1" target="_blank" rel="noopener noreferrer">
+        <img class="main-app-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp10hIzECKPKKyrmzudxbEwdW8ixa0YJwH06MDrZgtcmu_lL5SrA" alt="禁煙は貯金だ" scale="0">
+      </a>
+    </div>
   </div>
 </div>
-<footer>
-  
+<footer id="<%= @post1.id %>">
+  <%= render partial: 'likes/like' %>
+  <div class="block tac">
+	  <a style="display: inline-block;" id="rippleria" href="#">
+	    <img class="mmm" src="http://yukawanet.com/wp-content/uploads/2018/08/unchi_character.png" alt="image">
+    </a>
+    <h1 class="cooo">終わり</h1>
+  </div>
 </footer>
+

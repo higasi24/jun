@@ -14,7 +14,22 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    @post = Post.new(post_params)
+    @post.user_id = @post.user.id
+    # Post.create(post_params)
+  end
+
+  def fav
+    post = Post.find(params[:id])
+    if post.favorited_by?(post)
+      fav = post.user.likes.find_by(post_id: post.id)
+      fav.destroy
+      render json: post.id
+    else
+      fav = post.user.likes.new(post_id: post.id)
+      fav.save
+      render json: post.id
+    end
   end
 
   def contents
